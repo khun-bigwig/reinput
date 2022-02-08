@@ -52,7 +52,10 @@ export default class ReinputLabel extends React.Component {
           translateY: this.state.animatedTranslate
         })}
       >
-        <Text maxFontSizeMultiplier={this.props.maxFontSizeMultiplier} style={styles.label(this.props)}>
+        <Text 
+          style={styles.label(this.props)}
+          maxFontSizeMultiplier={this.props.maxFontSizeMultiplier}
+        >
           {this.props.label}
         </Text>
       </Animated.View>

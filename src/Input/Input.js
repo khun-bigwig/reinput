@@ -92,7 +92,10 @@ export default class ReinputInput extends React.Component {
             accessibilityLabel={this.props.accessibilityLabel || this.props.label}
             style={{ backgroundColor: this.props.backgroundColor }}
           >
-            <Label {...pickLabelProps({ ...this.props, hasValue, focused })} />
+            <Label 
+              {...pickLabelProps({ ...this.props, hasValue, focused })} 
+              maxFontSizeMultiplier={this.props.maxFontSizeMultiplier} 
+            />
             <Placeholder {...pickPlaceholderProps({ ...this.props, hasValue, focused })} />
             <TextInput
               {...pickTextInputProps(this.props)}

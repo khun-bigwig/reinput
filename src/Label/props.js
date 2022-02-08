@@ -26,7 +26,6 @@ export const propTypes = {
   paddingLeft: PropTypes.number,
   paddingRight: PropTypes.number,
   paddingTop: PropTypes.number,
-  maxFontSizeMultiplier: PropTypes.number,
 }
 
 /** @type {PropTypes.InferProps<typeof propTypes>} */
