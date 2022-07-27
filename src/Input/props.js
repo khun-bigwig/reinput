@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import { TextInput } from 'react-native'
+import { TextPropTypes } from 'deprecated-react-native-prop-types';
 
 import { BASE_UNIT, BLACK, FONT, noop } from '../services/constants'
 import pick from '../services/pick'
@@ -72,5 +72,5 @@ export const defaultProps = {
 }
 
 export const pickTextInputProps = (props) => {
-  return pick(props, Object.keys(TextInput.propTypes))
+  return pick(props, Object.keys(TextPropTypes))
 }
